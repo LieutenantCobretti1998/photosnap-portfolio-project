@@ -1,0 +1,41 @@
+.navigation {
+  margin: 1.5rem 0 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10rem 0 10rem;
+  background-color: white;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__activities {
+    display: flex;
+    gap: 4rem;
+
+    &__stories {
+      font-size: 1.2rem;
+      transition: color .4s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        color: var(--light-grey);
+      }
+    }
+  }
+
+  &__get-invite {
+    background-color: var(--black);
+    color: var(--white);
+    width: 120px;
+    height: 40px;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--black);
+      background-color: var(--light-grey);
+    }
+  }
+}

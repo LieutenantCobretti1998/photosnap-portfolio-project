@@ -1,0 +1,263 @@
+#section-1,
+#section-2,
+#section-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#section-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#section-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#section-4 a {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+#section-4 a:hover {
+  transform: translateY(-25px);
+}
+#section-4 a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-image: linear-gradient(to bottom, var(--main-color-1), var(--main-color-2), var(--main-color-3));
+  transform: scaleX(1);
+}
+#section-4 a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), 0%, rgba(0, 0, 0, 0.22) 100%);
+}
+
+#section-5 {
+  display: flex;
+  gap: 15rem;
+  align-items: center;
+  padding: 15rem;
+}
+
+.responsive,
+.available,
+.no-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.responsive > h3,
+.available > h3,
+.no-photo > h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.responsive > p,
+.available > p,
+.no-photo > p {
+  font-size: 1.5rem;
+}
+
+.story-details {
+  position: absolute;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 4rem 4rem 4rem 4rem;
+}
+.story-details h3, .story-details p {
+  text-decoration: none;
+  color: var(--white);
+}
+.story-details h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.story-details p {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.line {
+  margin-top: 1.5rem;
+  height: 0.1rem;
+  width: 100%;
+  background-color: var(--light-grey);
+  opacity: 0.25;
+}
+
+.read-story {
+  width: 100%;
+  margin-top: 1.5rem;
+  justify-content: space-between;
+}
+
+.black-box {
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 4rem;
+  background-color: var(--black);
+  color: var(--white);
+}
+.black-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust this to align perfectly in the center */
+  height: 40%; /* Adjust this based on how much center space you want the gradient to cover */
+  width: 4px; /* Same as border width */
+  background: linear-gradient(to bottom, var(--main-color-1), var(--main-color-2), var(--main-color-3));
+}
+
+.white-box {
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 4rem;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.stories {
+  gap: 2rem;
+  display: flex;
+  max-width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stories__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4rem;
+}
+.stories__text {
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+.invite {
+  align-self: start;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.invite-button {
+  align-self: start;
+  border-style: none;
+  background: none;
+  color: var(--white);
+  position: relative;
+}
+.invite-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background-color: var(--white);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+.invite-button:hover {
+  cursor: pointer;
+}
+.invite-button:hover::after {
+  transform: scaleX(1);
+}
+.invite-button__arrow g {
+  fill: var(--white);
+  stroke: var(--white);
+}
+
+.black {
+  color: var(--black);
+}
+.black::after {
+  background-color: var(--black);
+}
+
+.black__arrow g {
+  fill: var(--black);
+  stroke: var(--black);
+}
+
+#footer {
+  background-color: var(--black);
+  padding: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.logos svg:nth-child(1) g path:nth-child(1) {
+  fill: var(--white);
+}
+
+.social-medias {
+  display: flex;
+  gap: 1.5rem;
+}
+.social-medias > svg > path {
+  fill: var(--white);
+}
+
+.pages {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.pages p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.get-invite {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.get-invite small {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: var(--white);
+  opacity: 0.5;
+}
+.get-invite div {
+  align-self: end;
+}
+
+/*# sourceMappingURL=home-page-main.css.map */

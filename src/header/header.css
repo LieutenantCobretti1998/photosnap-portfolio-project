@@ -1,0 +1,38 @@
+.navigation {
+  margin: 1.5rem 0 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10rem 0 10rem;
+  background-color: white;
+}
+.navigation__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation__activities {
+  display: flex;
+  gap: 4rem;
+}
+.navigation__activities__stories {
+  font-size: 1.2rem;
+  transition: color 0.4s ease-in-out;
+}
+.navigation__activities__stories:hover {
+  cursor: pointer;
+  color: var(--light-grey);
+}
+.navigation__get-invite {
+  background-color: var(--black);
+  color: var(--white);
+  width: 120px;
+  height: 40px;
+}
+.navigation__get-invite:hover {
+  cursor: pointer;
+  color: var(--black);
+  background-color: var(--light-grey);
+}
+
+/*# sourceMappingURL=header.css.map */

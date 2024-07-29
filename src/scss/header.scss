@@ -18,10 +18,16 @@
 
     &__stories {
       font-size: 1.2rem;
-      transition: color .4s ease-in-out;
-      &:hover {
-        cursor: pointer;
-        color: var(--light-grey);
+
+      & > a {
+        text-decoration: none;
+        color: var(--black);
+        transition: color .4s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          color: var(--light-grey);
+        }
       }
     }
   }

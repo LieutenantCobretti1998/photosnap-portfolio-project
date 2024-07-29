@@ -1,4 +1,5 @@
 import "./header.css"
+import {Link} from "react-router-dom";
 export default function Header() {
 
     return (
@@ -19,9 +20,15 @@ export default function Header() {
                         </g>
                     </svg>
                     <menu className="navigation__activities">
-                        <div className="navigation__activities__stories">Stories</div>
-                        <div className="navigation__activities__stories">Features</div>
-                        <div className="navigation__activities__stories">Pricing</div>
+                        <div className="navigation__activities__stories">
+                            <Link to="/stories">Stories</Link>
+                        </div>
+                        <div className="navigation__activities__stories">
+                            <Link to="#">Features</Link>
+                        </div>
+                        <div className="navigation__activities__stories">
+                            <Link to="#">pricing</Link>
+                        </div>
                     </menu>
                     <button className="navigation__get-invite" type="button">
                         Get an Invite

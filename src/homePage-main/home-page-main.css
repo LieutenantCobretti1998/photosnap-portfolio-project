@@ -24,10 +24,11 @@
 #section-4 a:hover::after {
   content: "";
   position: absolute;
+  top: 100%;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 3px;
+  height: 1px;
   background-image: linear-gradient(to bottom, var(--main-color-1), var(--main-color-2), var(--main-color-3));
   transform: scaleX(1);
 }

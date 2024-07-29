@@ -17,9 +17,13 @@
 }
 .navigation__activities__stories {
   font-size: 1.2rem;
+}
+.navigation__activities__stories > a {
+  text-decoration: none;
+  color: var(--black);
   transition: color 0.4s ease-in-out;
 }
-.navigation__activities__stories:hover {
+.navigation__activities__stories > a:hover {
   cursor: pointer;
   color: var(--light-grey);
 }

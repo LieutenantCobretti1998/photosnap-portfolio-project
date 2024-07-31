@@ -27,7 +27,7 @@ export default function Header() {
                             <Link to="#">Features</Link>
                         </div>
                         <div className="navigation__activities__stories">
-                            <Link to="#">pricing</Link>
+                            <Link to="#">Pricing</Link>
                         </div>
                     </menu>
                     <button className="navigation__get-invite" type="button">

@@ -87,7 +87,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section id="section-4">
+            <section id="works">
                 <a href="#">
                     <div className="story-details">
                         <h3 className="story-details__place">The Mountains</h3>

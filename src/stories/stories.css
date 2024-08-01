@@ -42,4 +42,9 @@
   justify-content: space-between;
 }
 
+#works {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /*# sourceMappingURL=stories.css.map */

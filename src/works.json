@@ -1,0 +1,129 @@
+[
+  {
+    "id": 1,
+    "image": "/src/assets/stories/desktop/mountains.jpg",
+    "alt": "Mountains",
+    "author": "by John Appleseed",
+    "title": "Hazy full moon of Appalachia"
+  },
+  {
+    "id": 2,
+    "image": "/src/assets/stories/desktop/cityscapes.jpg",
+    "alt": "Cityscapes",
+    "date": "April 14th 2020",
+    "author": "by John Appleseed",
+    "title": "Sunset Cityscapes"
+  },
+  {
+    "id": 3,
+    "image": "/src/assets/stories/desktop/18-days-voyage.jpg",
+    "alt": "Voyage",
+    "date": "April 11th 2020",
+    "author": "by Alexei Borodin",
+    "title": "18 Days Voyage"
+  },
+  {
+    "id": 4,
+    "image": "/src/assets/stories/desktop/architecturals.jpg",
+    "alt": " Architecturals",
+    "date": "April 9th 2020",
+    "author": "by Samantha Brooke",
+    "title": "Architecturals"
+  },
+  {
+    "id": 5,
+    "image": "/src/assets/stories/desktop/world-tour.jpg",
+    "alt": "World Tour 2019",
+    "date": "April 7th 2020",
+    "author": "by Timothy Wagner",
+    "title": "World Tour 2019"
+  },
+  {
+    "id": 6,
+    "image": "/src/assets/stories/desktop/unforeseen-corners.jpg",
+    "alt": "Unforeseen Corners",
+    "date": "April 3rd 2020",
+    "author": "by William Malcolm",
+    "title": "Unforeseen Corners"
+  },
+  {
+    "id": 7,
+    "image": "/src/assets/stories/desktop/king-on-africa.jpg",
+    "alt": "King on Africa: Part II",
+    "date": "March 29th 2020",
+    "author": "by Tim Hillenburg",
+    "title": "King on Africa: Part II"
+  },
+  {
+    "id": 8,
+    "image": "/src/assets/stories/desktop/trip-to-nowhere.jpg",
+    "alt": "The Trip to Nowhere",
+    "date": "March 21st 2020",
+    "author": "by Felicia Rourke",
+    "title": "The Trip to Nowhere"
+  },
+  {
+    "id": 9,
+    "image": "/src/assets/stories/desktop/rage-of-the-sea.jpg",
+    "alt": "Rage of The Sea",
+    "date": "March 19th 2020",
+    "author": "by Mohammed Abdul",
+    "title": "Rage of The Sea"
+  },
+  {
+    "id": 10,
+    "image": "/src/assets/stories/desktop/behind-the-waves.jpg",
+    "alt": "Behind the Waves",
+    "date": "March 11th 2020",
+    "author": "by Lamarr Wilson",
+    "title": "Behind the Waves"
+  },
+  {
+    "id": 11,
+    "image": "/src/assets/stories/desktop/calm-waters.jpg",
+    "alt": "Calm Waters",
+    "date": "March 9th 2020",
+    "author": "by Samantha Brooke",
+    "title": "Calm Waters"
+  },
+  {
+    "id": 12,
+    "image": "/src/assets/stories/desktop/milky-way.jpg",
+    "alt": "The Milky Way",
+    "date": "March 5th 2020",
+    "author": "by Benjamin Cruz",
+    "title": "The Milky Way"
+  },
+  {
+    "id": 13,
+    "image": "/src/assets/stories/desktop/dark-forest.jpg",
+    "alt": "Night at The Dark Forest",
+    "date": "March 4th 2020",
+    "author": "by  Mohammed Abdul",
+    "title": "Night at The Dark Forest"
+  },
+  {
+    "id": 14,
+    "image": "/src/assets/stories/desktop/somwarpet.jpg",
+    "alt": "Somwarpet’s Beauty",
+    "date": "March 1st 2020",
+    "author": "by Michelle",
+    "title": "Somwarpet’s Beauty"
+  },
+  {
+    "id": 15,
+    "image": "/src/assets/stories/desktop/land-of-dreams.jpg",
+    "alt": "Land of Dreams",
+    "date": "February 25th 2020",
+    "author": "by William Malcolm",
+    "title": "Land of Dreams"
+  },
+  {
+    "id": 16,
+    "image": "/src/assets/stories/desktop/running-free.jpg",
+    "alt": "Running Free",
+    "date": "March 16th 2020",
+    "author": "by Michelle",
+    "title": "Running Free"
+  }
+]

@@ -32,6 +32,15 @@
     }
   }
 
+  .active-page {
+    cursor: default;
+    color: var(--light-grey);
+
+    &:hover {
+      cursor: default;
+    }
+  }
+
   &__get-invite {
     background-color: var(--black);
     color: var(--white);

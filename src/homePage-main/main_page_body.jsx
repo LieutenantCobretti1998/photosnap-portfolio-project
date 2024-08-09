@@ -6,8 +6,8 @@ import SunSetSkyScrapersImage from "../assets/stories/desktop/cityscapes.jpg";
 import VoyageImage from "../assets/stories/desktop/18-days-voyage.jpg";
 import ArchitectureImage from "../assets/stories/desktop/architecturals.jpg";
 import "./home-page-main.css";
-export default function Home() {
 
+export default function Home() {
     return (
         <main>
             <section id="section-1">

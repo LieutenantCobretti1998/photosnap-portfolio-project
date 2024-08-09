@@ -27,6 +27,13 @@
   cursor: pointer;
   color: var(--light-grey);
 }
+.navigation .active-page {
+  cursor: default;
+  color: var(--light-grey);
+}
+.navigation .active-page:hover {
+  cursor: default;
+}
 .navigation__get-invite {
   background-color: var(--black);
   color: var(--white);

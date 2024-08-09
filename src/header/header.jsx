@@ -4,7 +4,8 @@ export default function Header() {
     let location = useLocation();
     const isHome = location.pathname === "/";
     const isStories = location.pathname === "/stories";
-    const isFeatures = location.pathname === "/features"
+    const isFeatures = location.pathname === "/features";
+    const isPricing = location.pathname === "/pricing";
     return (
         <>
             <header className="navigation">
@@ -57,7 +58,11 @@ export default function Header() {
                         )}
                     </div>
                     <div className="navigation__activities__stories">
-                        <Link to="#">Pricing</Link>
+                        {!isPricing ? (
+                            <Link to="/pricing">Pricing</Link>
+                        ): (
+                            <Link className="active-page" to="/pricing">Pricing</Link>
+                        )}
                     </div>
                 </menu>
                 <button className="navigation__get-invite" type="button">

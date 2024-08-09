@@ -20,3 +20,25 @@
   row-gap: 10.4rem;
   max-width: 111rem;
 }
+
+.responsivness,
+.availability,
+.no-photo-container,
+.custom-domain,
+.boost,
+.drag-drop{
+  text-align: center;
+
+  & h3 {
+    margin-top: 4.8rem;
+    margin-bottom: 1.6rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  & p {
+    font-size: 1.5rem;
+  }
+
+}
+

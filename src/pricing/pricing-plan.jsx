@@ -1,7 +1,7 @@
 
 function PricingPlan({title, description, price, status}) {
     return (
-        <div className={`pricing-plan ${status}`}>
+        <div className={`pricing-plan ${status} ${title === 'Pro' ? 'pro' : ''}`}>
             <div className="title-descr">
                 <h2>{title}</h2>
                 <p>{description}</p>
@@ -10,12 +10,8 @@ function PricingPlan({title, description, price, status}) {
                 <h3>{price}</h3>
                 <p>{status}</p>
             </div>
-            <div className="pricing">
 
-            <div className="choose-btn">
-                <a href="#" type="button" className="choose-btn">PICK PLAN</a>
-            </div>
-            </div>
+            <a href="#" type="button" className="choose-btn">PICK PLAN</a>
         </div>
     );
 }

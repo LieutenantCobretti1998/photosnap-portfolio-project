@@ -1,4 +1,4 @@
-main {
+.main-container {
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -94,6 +94,8 @@ main {
   margin-top: 5rem;
   display: flex;
   gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .pricing-plan {
@@ -101,7 +103,28 @@ main {
   display: flex;
   gap: 1.5rem;
   flex-direction: column;
-  width: 300px;
+  width: 28vw;
+  transition: scale .1s ease-in-out;
+
+  &:hover {
+    scale: 1.05;
+  }
+}
+
+.pro {
+  background-color: var(--black);
+  color: var(--white);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Height of the top border */
+    background: linear-gradient(to bottom, var(--main-color-1), var(--main-color-2), var(--main-color-3));
+  }
 }
 
 .title-descr {
@@ -112,7 +135,7 @@ main {
   align-items: center;
   gap: 1.5rem;
 
-  & h3 {
+  & h2 {
     font-size: 2.4rem;
   }
 
@@ -139,18 +162,23 @@ main {
   }
 }
 
-.pricing {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2.5rem;
-}
 
 .choose-btn {
   background-color: var(--black);
+  color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   width: 80%;
+  padding: 1.2rem 0;
+  margin-bottom: 2.5rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: var(--white);
+    color: var(--black);
+  }
 
   & a {
     text-decoration: none;
@@ -162,10 +190,9 @@ main {
 
 .packages-section {
   display: flex;
-  flex-direction: column;
-
+  align-self: center;
   gap: 3rem;
-  max-width: 75rem;
+
 
   & h2 {
     align-self: center;
@@ -175,7 +202,8 @@ main {
 }
 
 .pricing-table {
-
+  margin-left: 35rem;
+  margin-right: 35rem;
   border-collapse: collapse;
 
 }

@@ -18,7 +18,7 @@ export default function Pricing() {
         <main className="main-container">
             <motion.section
                 id="section-1"
-                initial={{y: -100, opacity: 0}}
+                initial={{y: -20, opacity: 0}}
                 animate={{y: 0, opacity: 1}}
                 transition={{duration: .5, ease: "easeIn"}}
             >

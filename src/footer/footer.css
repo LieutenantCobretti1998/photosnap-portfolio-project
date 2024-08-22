@@ -1,0 +1,71 @@
+#footer {
+  background-color: var(--black);
+  padding: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.logos svg:nth-child(1) g path:nth-child(1) {
+  fill: var(--white);
+}
+
+.social-medias {
+  display: flex;
+  gap: 1.5rem;
+}
+.social-medias > svg > path {
+  fill: var(--white);
+}
+
+.pages {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.pages a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+}
+.pages a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+.pages a:hover::after {
+  transform: scaleX(1);
+}
+
+.get-invite {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.get-invite small {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: var(--white);
+  opacity: 0.5;
+}
+.get-invite div {
+  align-self: end;
+}
+
+/*# sourceMappingURL=footer.css.map */

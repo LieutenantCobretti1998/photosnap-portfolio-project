@@ -8,7 +8,7 @@ import {useInView, motion} from "framer-motion";
 
 export default function Pricing() {
     const [plans, setPlans] = useState(pricing);
-   const tableRef = useRef(null);
+    const tableRef = useRef(null);
     const isInView = useInView(tableRef, {once:true, amount:"some"})
     const [yearly, setYearly] = useState(false);
     const handleChange = () => {

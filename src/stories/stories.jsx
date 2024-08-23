@@ -1,16 +1,50 @@
 import "./stories.css";
 import stories from "../works.json";
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
+import {motion, useAnimation, useInView} from "framer-motion";
 import Footer from "../footer/footer.jsx";
+
+const imageVariants = {
+    hidden: {
+        opacity: 0,
+        pointerEvents: "none",
+        y: 50
+    },
+    visible: (index) => ({
+        opacity: 1,
+        pointerEvents: "auto",
+        y: 0,
+        transition: {
+            duration: 0.5,
+            delay: 0.1 * index,
+            ease: "easeInOut",
+        }
+    })
+}
+
 export default function Stories() {
     const [storiesData, setStoriesData] = useState([]);
+    const controls = useAnimation();
+    const storiesContainer = useRef(null);
+    const isInView = useInView(storiesContainer, {once:true, amount:"some"});
 
     useEffect(() => {
         setStoriesData(stories)
     }, []);
+
+    useEffect(() => {
+        if(isInView) {
+            controls.start("visible");
+        }
+    }, [controls, isInView]);
     return (
         <main>
-            <section className="big-image">
+            <motion.section
+                className="big-image"
+                initial={{y: -20, opacity: 0}}
+                animate={{y: 0, opacity: 1}}
+                transition={{duration: .5, ease: "easeIn"}}
+            >
                 <div className="overview">
                     <p className="overview__featured">
                         <b>Last month's featured story</b>
@@ -35,10 +69,20 @@ export default function Stories() {
                         </svg>
                     </div>
                 </div>
-            </section>
-            <section id="works">
+            </motion.section>
+            <motion.section id="works" ref={storiesContainer}>
                 {storiesData.map((story) => (
-                    <a href="#" key={story.id}>
+                    <motion.a href="#"
+                              key={story.id}
+                              custom={story.id}
+                              initial="hidden"
+                              animate={controls}
+                              variants={imageVariants}
+                              whileHover={{
+                                  translateY: -25,
+                                  transition: {duration: 0.3, ease: "easeInOut",}
+                              }}
+                    >
                         <div className="story-details">
                             <h3 className="story-details__place">{story.title}</h3>
                             <p className="story-details__name">{story.author}</p>
@@ -54,10 +98,12 @@ export default function Stories() {
                                 </svg>
                             </div>
                         </div>
-                        <img src={story.image} alt="Mountains"/>
-                    </a>
+                        <motion.img src={story.image}
+                                    className="stories-image"
+                        />
+                    </motion.a>
                 ))}
-            </section>
+            </motion.section>
             <Footer />
         </main>
     )

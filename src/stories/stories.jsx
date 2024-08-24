@@ -80,7 +80,7 @@ export default function Stories() {
                               variants={imageVariants}
                               whileHover={{
                                   translateY: -25,
-                                  transition: {duration: 0.3, ease: "easeInOut",}
+                                  transition: {duration: 0.1, ease: "easeInOut",}
                               }}
                     >
                         <div className="story-details">

@@ -230,3 +230,13 @@
     stroke: var(--black);
   }
 }
+
+.image-box {
+  width: 90%;
+
+  & img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+}

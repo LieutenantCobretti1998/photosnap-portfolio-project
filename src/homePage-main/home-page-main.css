@@ -210,4 +210,13 @@
   stroke: var(--black);
 }
 
+.image-box {
+  width: 90%;
+}
+.image-box img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
 /*# sourceMappingURL=home-page-main.css.map */

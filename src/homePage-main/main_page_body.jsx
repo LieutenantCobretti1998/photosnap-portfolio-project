@@ -9,6 +9,7 @@ import "./home-page-main.css";
 import Footer from "../footer/footer.jsx";
 import {motion, useAnimation, useInView} from "framer-motion";
 import {useEffect, useRef} from "react";
+import {Link} from "react-router-dom";
 
 
 const imageVariants = {
@@ -146,7 +147,9 @@ export default function Home() {
                             with everyone.
                         </span>
                         <div className="invite">
-                            <button type="button" className="invite-button black">View the stories</button>
+                            <Link to="/stories">
+                                <button type="button" className="invite-button black">View the stories</button>
+                            </Link>
                             <svg className="invite-button__arrow black__arrow" xmlns="http://www.w3.org/2000/svg"
                                  width="43"
                                  height="14">
@@ -175,7 +178,9 @@ export default function Home() {
                             tool is designed for photographers of all levels, brands, businesses you name it.
                         </span>
                         <div className="invite">
-                            <button type="button" className="invite-button black">View the stories</button>
+                            <Link to="/stories">
+                                <button type="button" className="invite-button black">View the stories</button>
+                            </Link>
                             <svg className="invite-button__arrow black__arrow" xmlns="http://www.w3.org/2000/svg" width="43"
                                  height="14">
                                 <g fill="none" fillRule="evenodd" stroke="#000">

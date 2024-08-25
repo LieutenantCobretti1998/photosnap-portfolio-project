@@ -3,6 +3,8 @@ import stories from "../works.json";
 import {useEffect, useRef, useState} from "react";
 import {motion, useAnimation, useInView} from "framer-motion";
 import Footer from "../footer/footer.jsx";
+import {Link, Outlet, useParams} from "react-router-dom";
+import storyLoader from "../data_loading.js";
 
 const imageVariants = {
     hidden: {
@@ -27,7 +29,9 @@ export default function Stories() {
     const controls = useAnimation();
     const storiesContainer = useRef(null);
     const isInView = useInView(storiesContainer, {once:true, amount:"some"});
-
+    const {story_id} = useParams();
+    const [story, setStory] = useState(null);
+    const [error, setError] = useState(null);
     useEffect(() => {
         setStoriesData(stories)
     }, []);
@@ -36,9 +40,34 @@ export default function Stories() {
         if(isInView) {
             controls.start("visible");
         }
-    }, [controls, isInView]);
+    }, [controls, isInView, story_id]);
+
+    useEffect(() => {
+        function fetchStory() {
+            if (story_id) { // Ensure story_id is not undefined or null
+                try {
+                    const data = storyLoader(Number(story_id));
+                    setStory(data);
+                } catch (error) {
+                    setError(error.message);
+                }
+            } else {
+                console.log("story_id is undefined or null");
+            }
+        }
+
+        fetchStory();
+    }, [story_id]);
+
+    if(story_id && story) {
+        return (
+            <Outlet context={story} />
+        )
+    }
+
     return (
         <main>
+
             <motion.section
                 className="big-image"
                 initial={{y: -20, opacity: 0}}
@@ -72,7 +101,7 @@ export default function Stories() {
             </motion.section>
             <motion.section id="works" ref={storiesContainer}>
                 {storiesData.map((story) => (
-                    <motion.a href="#"
+                    <motion.div
                               key={story.id}
                               custom={story.id}
                               initial="hidden"
@@ -83,6 +112,8 @@ export default function Stories() {
                                   transition: {duration: 0.1, ease: "easeInOut",}
                               }}
                     >
+                        <Link to={`/stories/${story.id}`}>
+
                         <div className="story-details">
                             <h3 className="story-details__place">{story.title}</h3>
                             <p className="story-details__name">{story.author}</p>
@@ -101,7 +132,8 @@ export default function Stories() {
                         <motion.img src={story.image}
                                     className="stories-image"
                         />
-                    </motion.a>
+                        </Link>
+                    </motion.div>
                 ))}
             </motion.section>
             <Footer />

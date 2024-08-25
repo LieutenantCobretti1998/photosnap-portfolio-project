@@ -2,128 +2,160 @@
   {
     "id": 1,
     "image": "/src/assets/stories/desktop/mountains.jpg",
+    "background_img": "/src/assets/stories/background/appalachian.jpg",
     "alt": "Mountains",
     "author": "by John Appleseed",
-    "title": "Hazy full moon of Appalachia"
+    "title": "Hazy full moon of Appalachia",
+    "story": "In the heart of Appalachia, the full moon rose majestically above the rugged landscape, casting a mystical glow over the valleys and peaks. The night was cool, and a gentle breeze carried the scent of pine through the air. As the moon climbed higher, it became shrouded in a delicate haze, softening its light and creating an ethereal atmosphere that felt almost dreamlike. The mountain peaks, dusted with the first snow of the season, seemed to stretch toward the glowing orb, their white caps reflecting the moonlight and adding to the surreal beauty of the scene below.\n\nThe valleys, now cloaked in shadow, were illuminated only by the occasional glint of light from a stream or the flicker of a distant campfire. The silence of the night was profound, broken only by the whisper of the wind through the pines and the distant call of a lone owl. It was a moment of perfect tranquility, where the natural world seemed to hold its breath in reverence of the celestial display above.\n\nUnder the watchful eye of the full moon, the ancient stories of the mountains seemed to come alive, whispered by the wind and carried through the valleys. In this place, time stood still, and the boundaries between the past and present blurred, leaving those who witnessed it with a sense of awe and connection to the timeless beauty of nature"
   },
   {
     "id": 2,
     "image": "/src/assets/stories/desktop/cityscapes.jpg",
+    "background_img": "/src/assets/stories/background/sunset-city.jpg",
     "alt": "Cityscapes",
     "date": "April 14th 2020",
     "author": "by John Appleseed",
-    "title": "Sunset Cityscapes"
+    "title": "Sunset Cityscapes",
+    "story": "In the bustling heart of the city, as the sun began its slow descent, the skyline was set ablaze with vibrant hues of orange, pink, and purple. The buildings, towering and majestic, stood as silent sentinels, their glass facades reflecting the brilliant colors of the sunset. It was a moment where the urban landscape, often characterized by its relentless pace and constant noise, paused to admire the natural beauty that unfolded above.\n\nThe streets below, usually crowded with people and cars, seemed to move at a slower pace as the last rays of sunlight bathed the city in a warm, golden glow. The shadows grew longer, and the air took on a cool, crisp quality, signaling the end of another day. From the top of a skyscraper, the view was nothing short of breathtaking. The city's silhouette, with its intricate blend of modern architecture and historical buildings, was outlined against the vivid colors of the sky, creating a scene that felt both timeless and ephemeral.\n\nAs the sun dipped lower, the city lights began to flicker on, one by one, adding a new layer of beauty to the scene. The once vibrant sky slowly faded to twilight, leaving behind a canvas of deep blues and purples, speckled with the first stars of the evening. It was a reminder of the delicate balance between the man-made and the natural world—a moment where the two coexisted in perfect harmony, offering a brief respite from the hustle and bustle of city life.\n\n"
   },
   {
     "id": 3,
     "image": "/src/assets/stories/desktop/18-days-voyage.jpg",
+    "background_img": "/src/assets/stories/background/travelling.jpg",
     "alt": "Voyage",
     "date": "April 11th 2020",
     "author": "by Alexei Borodin",
-    "title": "18 Days Voyage"
+    "title": "18 Days Voyage",
+    "story": "Each day presented new marvels: the breathtaking sunrises and sunsets painted the horizon in brilliant shades, while dolphins occasionally joined the voyage, their graceful movements a reminder of the beauty of the ocean. Nights brought the awe-inspiring sight of the Milky Way, a glittering path across the sky that made Alexei feel small yet connected to the universe.\n\nThe voyage wasn’t without its trials. Storms brought fierce winds and towering waves that tested both the ship and its crew. Yet, these challenges deepened Alexei's respect for the sea’s might and unpredictability. The solitude of the open ocean allowed him time to reflect on life’s journey—its twists and turns, its moments of calm and chaos.\n\nThe sea became a metaphor for life itself, teaching Alexei lessons of resilience, patience, and the beauty of the unknown. As the ship approached its final destination, he felt a profound sense of peace. The ocean had become a part of him, and though the voyage was ending, the experiences and insights gained would stay with him forever."
   },
   {
     "id": 4,
     "image": "/src/assets/stories/desktop/architecturals.jpg",
+    "background_img": "/src/assets/stories/background/axel-towers.jpg",
     "alt": " Architecturals",
     "date": "April 9th 2020",
     "author": "by Samantha Brooke",
-    "title": "Architecturals"
+    "title": "Architecturals",
+    "story": "In the heart of the city, where history and modernity collide, Samantha Brooke embarked on a journey to capture the essence of architecture through her lens. The project, titled \"Architecturals,\" was more than just photographing buildings; it was about exploring the stories they told, the emotions they evoked, and the cultures they represented.\n\nHer journey began with the Axel Towers, an iconic structure that stood tall against the skyline, its copper-clad façade gleaming in the afternoon sun. The towers, with their curved edges and interlocking forms, symbolized a harmonious blend of function and art. As Samantha framed her shot, she marveled at how architecture could speak without words, conveying the vision and creativity of its designers.\n\nEach building she photographed added a new chapter to her project. From the sleek, minimalist designs of modern skyscrapers to the ornate, historical details of cathedrals, Samantha saw architecture as a living narrative of human ambition and achievement. The lines, shadows, and textures of each structure told stories of the past, present, and future.\n\nBut it wasn’t just about the buildings themselves; it was about the spaces they created and the people who interacted with them. The bustling streets, quiet courtyards, and vibrant public squares were all part of the architectural tapestry she sought to document.\n\nAs her project progressed, Samantha realized that architecture was not just about structures; it was about identity, community, and the passage of time. Each photograph was a testament to the enduring relationship between people and the spaces they inhabit."
   },
   {
     "id": 5,
     "image": "/src/assets/stories/desktop/world-tour.jpg",
+    "background_img": "/src/assets/stories/background/world-tour.jpg",
     "alt": "World Tour 2019",
     "date": "April 7th 2020",
     "author": "by Timothy Wagner",
-    "title": "World Tour 2019"
+    "title": "World Tour 2019",
+    "story": "The World Tour of 2019 was not just a series of concerts—it was an epic journey that spanned continents, cultures, and countless unforgettable moments. For Timothy Wagner, the tour was a dream come true. As the band’s lead guitarist, he had always imagined playing on the world’s biggest stages, but nothing could have prepared him for the whirlwind adventure that lay ahead.\n\nThe tour kicked off in London, where the band was greeted by thousands of fans, their energy electrifying the air. Each night, as Timothy took the stage, the roar of the crowd sent shivers down his spine. The lights, the music, the sea of faces—it was a rush unlike any other. From Europe’s historic cities to the vibrant streets of Tokyo, each stop on the tour brought new experiences and challenges.\n\nIn Paris, they played under the shadow of the Eiffel Tower, the iconic structure glowing against the night sky. In Brazil, the rhythm of the samba echoed through the air, infusing their performance with a vibrant, local flavor. In Australia, the band played on the steps of the Sydney Opera House, the waves of the harbor crashing in the distance.\n\nBut it wasn’t just about the music. The tour was a journey of discovery—of cultures, of places, of people. Timothy found himself inspired by the diversity of the world, and the way music could bridge gaps, bring people together, and create moments of pure connection.\n\nAs the tour came to an end, Timothy looked back on the experience not just as a career milestone, but as a transformative journey that changed him forever. The World Tour of 2019 was more than just a series of concerts—it was a testament to the power of music and the shared human experience that transcends borders.\n\n"
   },
   {
     "id": 6,
     "image": "/src/assets/stories/desktop/unforeseen-corners.jpg",
+    "background_img": "/src/assets/stories/background/tree.jpg",
     "alt": "Unforeseen Corners",
     "date": "April 3rd 2020",
     "author": "by William Malcolm",
-    "title": "Unforeseen Corners"
+    "title": "Unforeseen Corners",
+    "story": "Traveling to the farthest reaches of the world had always been William Malcolm’s passion. However, it wasn’t the well-trodden paths that excited him the most—it was the unforeseen corners, the hidden places that few had ventured to, that truly sparked his sense of adventure. On his latest journey, William found himself exploring the uncharted territories of a remote island in the Pacific, a place untouched by time and free from the influences of modern civilization.\n\nThe island was a haven of natural beauty, with lush forests that whispered with the wind, and rugged cliffs that plunged into the deep blue sea. As William navigated through the dense underbrush, he felt a thrill of anticipation with each step. Every corner he turned revealed something new—an ancient tree twisted by time, a secluded beach where the waves danced in perfect rhythm, or a hidden waterfall cascading into a crystal-clear pool.\n\nBut it wasn’t just the landscape that captivated him; it was the stories whispered among the locals, tales of ancient spirits and forgotten legends. One evening, while sitting by the campfire, an elder shared with William the story of the island’s guardians—mysterious beings said to dwell in the shadows, watching over the land and its people. The elder spoke of how these guardians protected the island’s secrets, revealing them only to those who were truly worthy."
   },
   {
     "id": 7,
     "image": "/src/assets/stories/desktop/king-on-africa.jpg",
+    "background_img": "/src/assets/stories/background/wp6996296-lion-4k-wallpapers.jpg",
     "alt": "King on Africa: Part II",
     "date": "March 29th 2020",
     "author": "by Tim Hillenburg",
-    "title": "King on Africa: Part II"
+    "title": "King on Africa: Part II",
+    "story": "Returning to the vast landscapes of Africa, Tim Hillenburg was filled with a sense of nostalgia and reverence. His first journey had been transformative, but this time, he was determined to dive even deeper into the wild, to uncover the raw beauty and untold stories that had eluded him before. The journey began at dawn, the golden sun rising over the savannah, casting long shadows across the terrain. The distant roar of a lion, the king of this land, echoed through the air, signaling the start of another day in the African wilderness.\n\nAs Tim ventured further into the heart of Africa, he was struck by the diversity of life that thrived in this untamed land. Majestic elephants roamed the plains, their slow, deliberate movements a testament to their ancient wisdom. Graceful giraffes stretched their necks to nibble on the highest leaves, while herds of antelope moved with a synchronized elegance, ever alert to the predators lurking in the shadows.\n\nBut it was the lions that captured Tim’s imagination the most. Observing a pride from a distance, he marveled at their power and grace. The lionesses, ever vigilant, cared for their cubs with a fierce protectiveness, while the dominant male, the true king, stood watch, his golden mane rippling in the wind. There was a quiet nobility in his stance, a reminder that in this land, the lion reigned supreme."
   },
   {
     "id": 8,
     "image": "/src/assets/stories/desktop/trip-to-nowhere.jpg",
+    "background_img": "/src/assets/stories/background/tree-wallpaper-1920x1080.jpg",
     "alt": "The Trip to Nowhere",
     "date": "March 21st 2020",
     "author": "by Felicia Rourke",
-    "title": "The Trip to Nowhere"
+    "title": "The Trip to Nowhere",
+    "story": "The idea of a trip to nowhere had always intrigued Felicia Rourke. There was something liberating about not having a destination, about letting the road take her where it wanted to go. On a crisp March morning, she set out with nothing but a backpack and her camera, ready to embrace the unknown. The sky was a soft gray, the kind that hinted at the promise of spring but still held onto the chill of winter.\n\nAs Felicia walked, the landscape around her began to change. The bustling city streets gave way to winding country roads, and soon she found herself in a place where time seemed to stand still. There were no signs, no maps, only the gentle curve of the road leading her deeper into the wilderness. Tall, ancient trees lined her path, their bare branches reaching out like arms, guiding her forward.\n\nThe silence was profound, broken only by the occasional rustle of leaves underfoot or the distant call of a bird. It was as if the world had paused, allowing her to step outside of time and space, to exist in a moment that was entirely her own. The air was thick with the scent of earth and pine, grounding her even as her thoughts began to drift."
   },
   {
     "id": 9,
     "image": "/src/assets/stories/desktop/rage-of-the-sea.jpg",
+    "background_img": "/src/assets/stories/background/32-322852_biggest-maldives-waves.jpg",
     "alt": "Rage of The Sea",
     "date": "March 19th 2020",
     "author": "by Mohammed Abdul",
-    "title": "Rage of The Sea"
+    "title": "Rage of The Sea",
+    "story": "The sea was angry that day. Mohammed Abdul stood on the cliff's edge, staring out at the churning waters below. The sky was a tumultuous blend of gray and black, thick clouds roiling as if mirroring the chaos of the ocean. The waves crashed against the jagged rocks, sending plumes of white spray high into the air. It was a symphony of power, raw and untamed, a reminder of nature’s unyielding force.\n\nAs the storm grew, so did the fury of the sea. Each wave seemed to reach higher than the last, as if trying to pull the sky down into its depths. The wind howled, whipping through Mohammed’s hair and tugging at his clothes, but he remained rooted to the spot, mesmerized by the relentless power before him.\n\nHe had always been drawn to the sea, to its ever-changing moods. On calm days, it was a place of peace, a vast, soothing expanse of blue. But today, it was a force to be reckoned with, a wild beast that could not be tamed. The ocean’s rage was palpable, and yet, amidst the chaos, there was a strange beauty. The way the waves curled and crashed, the sound of the wind as it whipped across the surface, it was all a part of a grand, natural performance."
   },
   {
     "id": 10,
     "image": "/src/assets/stories/desktop/behind-the-waves.jpg",
+    "background_img": "/src/assets/stories/background/waves.jpg",
     "alt": "Behind the Waves",
     "date": "March 11th 2020",
     "author": "by Lamarr Wilson",
-    "title": "Behind the Waves"
+    "title": "Behind the Waves",
+    "story": "The ocean had always been a mystery to Lamarr Wilson. Growing up near the coast, he spent countless hours watching the waves roll in, their rhythmic motion a constant presence in his life. But it wasn’t until one fateful afternoon that he truly began to understand what lay behind the waves.\n\nIt was a day like any other, with the sun casting its golden light across the water, making the sea shimmer like a thousand diamonds. The waves were gentle, lapping at the shore with a soft, soothing sound. But as Lamarr stood there, something caught his eye—a flicker of movement beneath the surface. Curious, he waded into the water, the cool waves brushing against his legs. As he ventured further, the flicker became clearer, revealing a world that had been hidden from view.\n\nBeneath the waves, the ocean was alive with color and life. Schools of fish darted through the water, their scales reflecting the sunlight in a dazzling display. Coral reefs stretched out like underwater gardens, teeming with vibrant sea creatures of all shapes and sizes. It was a world of wonder, full of secrets waiting to be discovered."
   },
   {
     "id": 11,
     "image": "/src/assets/stories/desktop/calm-waters.jpg",
+    "background_img": "/src/assets/stories/background/calm-waters.jpg",
     "alt": "Calm Waters",
     "date": "March 9th 2020",
     "author": "by Samantha Brooke",
-    "title": "Calm Waters"
+    "title": "Calm Waters",
+    "story": "The lake was a mirror of tranquility, its surface so still that it seemed as if time itself had paused to take a breath. Samantha Brooke stood at the water’s edge, her thoughts as calm as the scene before her. The early morning mist clung to the water, giving the entire landscape an ethereal quality. The sun, just beginning to rise, cast a soft golden hue over the world, making everything appear as if it were touched by a gentle hand.\n\nThe stillness of the water reflected the serenity that Samantha sought. Life had been a whirlwind of noise and chaos, but here, in this secluded spot, she found peace. The gentle lapping of the water against the shore was the only sound that broke the silence, a soft reminder of the world beyond this moment. But for now, that world seemed distant, unimportant.\n\nAs she sat on the small wooden dock, dipping her toes into the cool water, she marveled at how the lake could hold such a powerful sense of calm. It was as if the water absorbed all the worries, fears, and anxieties, leaving only a profound sense of stillness in its wake. The trees around the lake stood tall and silent, their reflections perfect in the undisturbed surface."
   },
   {
     "id": 12,
     "image": "/src/assets/stories/desktop/milky-way.jpg",
+    "background_img": "/src/assets/stories/background/milky-way.jpg",
     "alt": "The Milky Way",
     "date": "March 5th 2020",
     "author": "by Benjamin Cruz",
-    "title": "The Milky Way"
+    "title": "The Milky Way",
+    "story": "As the sun dipped below the horizon, the world was gradually enveloped in a blanket of darkness. Benjamin Cruz stood alone in the middle of the vast desert, far from the lights of civilization, waiting for the night to reveal its wonders. The air was cool and still, and the silence around him was profound, broken only by the occasional whisper of the wind across the sands.\n\nAbove, the sky began to transform. At first, a few stars appeared, twinkling faintly against the inky blackness. But as the minutes passed, more and more stars emerged, until the heavens were ablaze with countless points of light. And then, like a curtain being drawn back, the Milky Way revealed itself in all its glory.\n\nIt stretched across the sky, a river of stars and cosmic dust that seemed to flow from one horizon to the other. Benjamin felt a deep sense of awe as he gazed up at the spectacle. The sheer scale of it was humbling, a reminder of how small and fleeting human life was in comparison to the vastness of the universe."
   },
   {
     "id": 13,
     "image": "/src/assets/stories/desktop/dark-forest.jpg",
+    "background_img": "/src/assets/stories/background/dark-forest.jpg",
     "alt": "Night at The Dark Forest",
     "date": "March 4th 2020",
     "author": "by  Mohammed Abdul",
-    "title": "Night at The Dark Forest"
+    "title": "Night at The Dark Forest",
+    "story": "As the last light of day faded, the Dark Forest came alive with a symphony of sounds. Mohammed Abdul stood at the edge of the forest, the towering trees casting long shadows that merged into the encroaching night. The path ahead was barely visible, a thin ribbon of dirt winding into the dense underbrush. Above, the sky transitioned from deep orange to a rich indigo, with the first stars beginning to pierce through the darkening veil.\n\nWith each step into the forest, the canopy above thickened, blocking out the remnants of twilight. The air grew cooler, the scent of earth and moss thick around him. The trees, ancient and gnarled, seemed to close in, their branches like skeletal hands reaching out to touch anyone who dared to enter. Yet, there was something mesmerizing about this place, something that called to the curious and the brave.\n\nAs night fully settled, the forest was plunged into an almost tangible darkness. But it was not silent. The rustle of leaves, the distant hoot of an owl, and the occasional snap of a twig underfoot were constant companions. And then, as if on cue, the sky above the trees revealed its hidden beauty. The Milky Way, a brilliant band of stars, cut through the night sky, illuminating the forest in a soft, ethereal glow."
   },
   {
     "id": 14,
     "image": "/src/assets/stories/desktop/somwarpet.jpg",
+    "background_img": "/src/assets/stories/background/marigolds.jpeg",
     "alt": "Somwarpet’s Beauty",
     "date": "March 1st 2020",
     "author": "by Michelle",
-    "title": "Somwarpet’s Beauty"
+    "title": "Somwarpet’s Beauty",
+    "story": "Nestled in the heart of the Western Ghats, Somwarpet is a place where nature’s beauty unfolds in the most unexpected ways. As Michelle wandered through the narrow lanes of this small town, she was captivated by the vibrant colors that seemed to burst forth from every corner. The early morning mist still clung to the air, softening the edges of the landscape and lending a dreamlike quality to her surroundings.\n\nFields of marigolds stretched out before her, their golden blooms swaying gently in the breeze. The air was thick with their heady fragrance, a scent that seemed to encapsulate the essence of the land itself. The sun, just beginning to rise, cast a warm glow over the fields, highlighting the rich, earthy tones of the soil and the deep green of the surrounding hills.\n\nAs she walked further, the sounds of the town began to blend with the symphony of nature. The distant call of a rooster, the rustle of leaves, and the gentle hum of bees busy at work created a soundtrack that was both soothing and invigorating. In this place, time seemed to slow down, allowing her to fully absorb the beauty that surrounded her."
   },
   {
     "id": 15,
     "image": "/src/assets/stories/desktop/land-of-dreams.jpg",
+    "background_img": "/src/assets/stories/background/dreamland.jpeg",
     "alt": "Land of Dreams",
     "date": "February 25th 2020",
     "author": "by William Malcolm",
-    "title": "Land of Dreams"
+    "title": "Land of Dreams",
+    "story": "In the mystical Land of Dreams, the line between reality and fantasy fades into a delicate blur, inviting all who wander here to lose themselves in its enchanting embrace. William Malcolm, a traveler of both worlds, found himself drawn to this place, where the very air seemed to hum with the promise of magic and wonder.\n\nThe landscape of the Land of Dreams was like nothing William had ever seen. Rolling hills of soft, velvety grass stretched as far as the eye could see, their surfaces shimmering in hues that shifted with the light—emerald, gold, and deep indigo. Above, the sky was a canvas of swirling colors, with stars twinkling even in daylight, as if the heavens themselves were alive with the dreams of those who dared to imagine.\n\nAs William walked, the ground beneath his feet seemed to pulse with energy, each step sending ripples through the earth, as if he were treading on the surface of a giant, living organism. In the distance, he could see towering trees with leaves that glowed faintly, casting a soft, ethereal light on everything they touched. The air was filled with the scent of unknown flowers, their fragrance carrying whispers of long-forgotten tales and hidden desires."
   },
   {
     "id": 16,
     "image": "/src/assets/stories/desktop/running-free.jpg",
+    "background_img": "/src/assets/stories/background/horser.jpg",
     "alt": "Running Free",
     "date": "March 16th 2020",
     "author": "by Michelle",
-    "title": "Running Free"
+    "title": "Running Free",
+    "story": "n the early dawn, when the world was still cloaked in the quiet calm of night, a solitary horse stood at the edge of the vast meadow, its breath forming delicate clouds in the cool morning air. The first rays of sunlight began to peek over the horizon, casting a golden hue across the landscape and waking the world from its slumber.\n\nThe horse, a majestic creature with a coat as dark as midnight, was a symbol of freedom and wild beauty. Its eyes gleamed with an untamed spirit, one that could not be confined or controlled. With a powerful thrust, it began to run, muscles rippling under its sleek coat as it moved effortlessly through the open field.\n\nThe sound of its hooves hitting the ground echoed through the stillness, a rhythmic beat that seemed to sync with the pulse of the earth itself. As it ran, the wind whipped through its mane, turning the strands into a flowing cascade that trailed behind like a banner of freedom."
   }
 ]

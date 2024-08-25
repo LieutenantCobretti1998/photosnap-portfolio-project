@@ -111,7 +111,7 @@
   {
     "id": 12,
     "image": "/src/assets/stories/desktop/milky-way.jpg",
-    "background_img": "/src/assets/stories/background/milky-way.jpg",
+    "background_img": "/src/assets/stories/background/milky-way.jpeg",
     "alt": "The Milky Way",
     "date": "March 5th 2020",
     "author": "by Benjamin Cruz",
@@ -141,7 +141,7 @@
   {
     "id": 15,
     "image": "/src/assets/stories/desktop/land-of-dreams.jpg",
-    "background_img": "/src/assets/stories/background/dreamland.jpeg",
+    "background_img": "/src/assets/stories/background/dreamland.jpg",
     "alt": "Land of Dreams",
     "date": "February 25th 2020",
     "author": "by William Malcolm",

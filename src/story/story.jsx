@@ -1,5 +1,6 @@
 import {useOutletContext} from "react-router-dom";
 import "./story.css"
+import Footer from "../footer/footer.jsx";
 function Story() {
     const story = useOutletContext();
 
@@ -29,6 +30,7 @@ function Story() {
                     ))}
                 </div>
             </section>
+            <Footer />
         </main>
     );
 }

@@ -1,13 +1,15 @@
 import Header from "./header/header.jsx";
 import Home from "./homePage-main/main_page_body.jsx";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Stories from "./stories/stories.jsx";
 import Features from "./features/features.jsx";
 import Pricing from "./pricing/pricing.jsx";
 import Story from "./story/story.jsx";
+import ScrollTop from "./helpers/scrollTop.jsx";
 function App() {
   return (
     <BrowserRouter>
+        <ScrollTop/>
         <Header />
         <Routes>
             <Route index path="/" element={<Home />} />

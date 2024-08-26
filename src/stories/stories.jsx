@@ -33,14 +33,14 @@ export default function Stories() {
     const [story, setStory] = useState(null);
     const [error, setError] = useState(null);
     useEffect(() => {
-        setStoriesData(stories)
+        setStoriesData(stories);
     }, []);
 
     useEffect(() => {
-        if(isInView) {
+        if (isInView) {
             controls.start("visible");
         }
-    }, [controls, isInView, story_id]);
+    }, [controls, isInView, storiesData.length, story_id]);
 
     useEffect(() => {
         function fetchStory() {
@@ -48,8 +48,9 @@ export default function Stories() {
                 try {
                     const data = storyLoader(Number(story_id));
                     setStory(data);
-                } catch (error) {
-                    setError(error.message);
+                } catch (err) {
+                    setError(err.message);
+                    console.error(error)
                 }
             } else {
                 console.log("story_id is undefined or null");
@@ -57,7 +58,8 @@ export default function Stories() {
         }
 
         fetchStory();
-    }, [story_id]);
+    }, [story_id, error]);
+
 
     if(story_id && story) {
         return (
@@ -131,6 +133,7 @@ export default function Stories() {
                         </div>
                         <motion.img src={story.image}
                                     className="stories-image"
+                                    alt={story.alt}
                         />
                         </Link>
                     </motion.div>

@@ -2,6 +2,8 @@
   {
     "id": 1,
     "image": "/src/assets/stories/desktop/mountains.jpg",
+    "imageSmall": "/src/assets/stories/mobile/mountains.jpg",
+    "imageMedium": "/src/assets/stories/tablet/mountains.jpg",
     "background_img": "/src/assets/stories/background/appalachian.jpg",
     "alt": "Mountains",
     "author": "by John Appleseed",
@@ -11,6 +13,8 @@
   {
     "id": 2,
     "image": "/src/assets/stories/desktop/cityscapes.jpg",
+    "imageSmall": "/src/assets/stories/mobile/cityscapes.jpg",
+    "imageMedium": "/src/assets/stories/tablet/cityscapes.jpg",
     "background_img": "/src/assets/stories/background/sunset-city.jpg",
     "alt": "Cityscapes",
     "date": "April 14th 2020",
@@ -21,6 +25,8 @@
   {
     "id": 3,
     "image": "/src/assets/stories/desktop/18-days-voyage.jpg",
+    "imageSmall": "/src/assets/stories/mobile/18-days-voyage.jpg",
+    "imageMedium": "/src/assets/stories/tablet/18-days-voyage.jpg",
     "background_img": "/src/assets/stories/background/travelling.jpg",
     "alt": "Voyage",
     "date": "April 11th 2020",
@@ -31,6 +37,8 @@
   {
     "id": 4,
     "image": "/src/assets/stories/desktop/architecturals.jpg",
+    "imageSmall": "/src/assets/stories/mobile/architecturals.jpg",
+    "imageMedium": "/src/assets/stories/tablet/architecturals.jpg",
     "background_img": "/src/assets/stories/background/axel-towers.jpg",
     "alt": " Architecturals",
     "date": "April 9th 2020",

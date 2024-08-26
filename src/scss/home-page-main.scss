@@ -240,3 +240,52 @@
     height: auto;
   }
 }
+
+@media(min-width: 330px) and (max-width: 500px) {
+  #section-1,
+  #section-3,
+  #section-5 {
+    flex-direction: column-reverse;
+  }
+
+  #section-2 {
+    flex-direction: column;
+  }
+
+  #section-5 {
+    padding: 4rem;
+  }
+
+  .image-box {
+    width: 100%;
+  }
+
+  .black-box,
+  .white-box {
+    padding: 5rem;
+    align-items: start;
+  }
+
+  .stories {
+    max-width: 70%;
+  }
+
+  #works {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .responsive,
+  .available,
+  .no-photo {
+    & > h3 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    & > p {
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+}

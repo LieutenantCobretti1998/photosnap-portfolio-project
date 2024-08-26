@@ -1,15 +1,19 @@
 import BeautifulStoriesImage from "../assets/home/desktop/create-and-share.jpg";
+import BeautifulStoriesImageSmall from "../assets/home/mobile/create-and-share.jpg";
+import BeautifulStoriesImageMedium from "../assets/home/tablet/create-and-share.jpg";
 import CreateAndShareImage from "../assets/home/desktop/beautiful-stories.jpg";
+import CreateShareImageSmall from "../assets/home/mobile/beautiful-stories.jpg";
+import CreateShareImageMedium from "../assets/home/tablet/beautiful-stories.jpg";
 import DesignedForEveryoneImage from "../assets/home/desktop/designed-for-everyone.jpg";
-import MountainsImage from "../assets/stories/desktop/mountains.jpg";
-import SunSetSkyScrapersImage from "../assets/stories/desktop/cityscapes.jpg";
-import VoyageImage from "../assets/stories/desktop/18-days-voyage.jpg";
-import ArchitectureImage from "../assets/stories/desktop/architecturals.jpg";
+import DesignedForEveryoneImageSmall from "../assets/home/mobile/designed-for-everyone.jpg";
+import DesignedForEveryoneImageMedium from "../assets/home/tablet/designed-for-everyone.jpg";
+import stories from "../works.json";
 import "./home-page-main.css";
 import Footer from "../footer/footer.jsx";
 import {motion, useAnimation, useInView} from "framer-motion";
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import {Link} from "react-router-dom";
+import ResponsiveImage from "../helpers/responsiveImage.jsx";
 
 
 const imageVariants = {
@@ -66,6 +70,7 @@ const svgVariants = {
 
 
 export default function Home() {
+    const [storiesData, setStoriesData] = useState([]);
     const controls = useAnimation();
     const section2Controls = useAnimation();
     const section3Controls = useAnimation();
@@ -73,8 +78,12 @@ export default function Home() {
     const section3Container = useRef(null);
     const storiesContainer = useRef(null);
     const isInView = useInView(storiesContainer, {once:true, amount:"some"});
-    const isSection2 = useInView(section2Container, {once:true, amount:0.8});
+    const isSection2 = useInView(section2Container, {once:true, amount:"some"});
     const isSection3 = useInView(section3Container, {once:true, amount:"some"});
+
+    useEffect(() => {
+        setStoriesData(stories.slice(0, 4));
+    }, []);
 
     useEffect(() => {
         if(isInView) {
@@ -120,10 +129,12 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-
-                <div className="image-box">
-                    <img src={BeautifulStoriesImage} alt="man looking on the lake"/>
-                </div>
+                <ResponsiveImage alt="Man looking on the lake"
+                                 smallSrc={BeautifulStoriesImageSmall}
+                                 mediumSrc={BeautifulStoriesImageMedium}
+                                 largeSrc={BeautifulStoriesImage}
+                                 defaultSrc={BeautifulStoriesImage}
+                />
             </motion.section>
 
             <motion.section
@@ -134,10 +145,12 @@ export default function Home() {
                 variants={section1Variants}
                 transition={{duration: .5, ease: "easeIn"}}
             >
-                <div className="image-box">
-                    <img src={CreateAndShareImage} alt="man looking on the lake"/>
-                </div>
-
+                <ResponsiveImage alt="Create and Share"
+                                 smallSrc={CreateShareImageSmall}
+                                 mediumSrc={CreateShareImageMedium}
+                                 largeSrc={CreateAndShareImage}
+                                 defaultSrc={CreateAndShareImage}
+                />
                 <div className="white-box">
                     <div className="stories">
                         <h1 className="stories__title">Beautiful stories every time</h1>
@@ -191,131 +204,63 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="image-box">
-                    <img src={DesignedForEveryoneImage} alt="man looking on the lake"/>
-                </div>
+                <ResponsiveImage alt="Designed for everyone"
+                                 smallSrc={DesignedForEveryoneImageSmall}
+                                 mediumSrc={DesignedForEveryoneImageMedium}
+                                 largeSrc={DesignedForEveryoneImage}
+                                 defaultSrc={DesignedForEveryoneImage}
+                />
             </motion.section>
 
             <motion.section
                 id="works"
                 ref={storiesContainer}
             >
-                <motion.a
-                    href="#"
-                    initial="hidden"
-                    custom={1}
-                    animate={controls}
-                    variants={imageVariants}
-                    whileHover={{
-                        translateY: -25,
-                        transition: {duration: 0.1, ease: "easeInOut",}
-                    }}
-                >
-                    <div className="story-details">
-                        <h3 className="story-details__place">The Mountains</h3>
-                        <p className="story-details__name">by John Appleseed</p>
-                        <div className="line"></div>
-                        <div className="invite read-story">
-                            <button type="button" className="invite-button">Read the Story</button>
-                            <svg className="invite-button__arrow" xmlns="http://www.w3.org/2000/svg"
-                                 width="43"
-                                 height="14">
-                                <g fill="none" fillRule="evenodd" stroke="#000">
-                                    <path d="M0 7h41.864M35.428 1l6 6-6 6"/>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                    <img src={MountainsImage} alt="Mountains"/>
-                </motion.a>
+                {storiesData.map((story) => (
+                    <motion.div
+                        key={story.id}
+                        custom={story.id}
+                        initial="hidden"
+                        animate={controls}
+                        variants={imageVariants}
+                        whileHover={{
+                            translateY: -25,
+                            transition: {duration: 0.1, ease: "easeInOut",}
+                        }}
+                    >
+                        <Link to={`/stories/${story.id}`}>
 
-                <motion.a
-                    href="#"
-                    initial="hidden"
-                    custom={2}
-                    animate={controls}
-                    variants={imageVariants}
-                    whileHover={{
-                        translateY: -25,
-                        transition: {duration: 0.1, ease: "easeInOut",}
-                    }}
-                >
-                    <div className="story-details">
-                        <h3 className="story-details__place"> Sunset Cityscapes</h3>
-                        <p className="story-details__name">  by Benjamin Cruz</p>
-                        <div className="line"></div>
-                        <div className="invite read-story">
-                            <button type="button" className="invite-button">Read Story</button>
-                            <svg className="invite-button__arrow" xmlns="http://www.w3.org/2000/svg"
-                                 width="43"
-                                 height="14">
-                                <g fill="none" fillRule="evenodd" stroke="#000">
-                                    <path d="M0 7h41.864M35.428 1l6 6-6 6"/>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                    <img src={SunSetSkyScrapersImage} alt="SunSetSkyScrapers"/>
-
-                </motion.a>
-                <motion.a
-                    href="#"
-                    initial="hidden"
-                    custom={3}
-                    animate={controls}
-                    variants={imageVariants}
-                    whileHover={{
-                        translateY: -25,
-                        transition: {duration: 0.1, ease: "easeInOut",}
-                    }}
-                >
-
-                    <div className="story-details">
-                        <h3 className="story-details__place">  18 Days Voyage</h3>
-                        <p className="story-details__name"> by Alexei Borodin</p>
-                        <div className="line"></div>
-                        <div className="invite read-story">
-                            <button type="button" className="invite-button">Read the Story</button>
-                            <svg className="invite-button__arrow" xmlns="http://www.w3.org/2000/svg"
-                                 width="43"
-                                 height="14">
-                                <g fill="none" fillRule="evenodd" stroke="#000">
-                                    <path d="M0 7h41.864M35.428 1l6 6-6 6"/>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                    <img src={VoyageImage} alt="Voyage"/>
-                </motion.a>
-                <motion.a
-                    href="#"
-                    initial="hidden"
-                    custom={4}
-                    animate={controls}
-                    variants={imageVariants}
-                    whileHover={{
-                        translateY: -25,
-                        transition: {duration: 0.1, ease: "easeInOut",}
-                    }}
-                >
-
-                    <div className="story-details">
-                        <h3 className="story-details__place">Architecturals</h3>
-                        <p className="story-details__name">  by Samantha Brooke</p>
-                        <div className="line"></div>
-                        <div className="invite read-story">
-                            <button type="button" className="invite-button">Read the Story</button>
-                            <svg className="invite-button__arrow" xmlns="http://www.w3.org/2000/svg"
-                                 width="43"
-                                 height="14">
-                                <g fill="none" fillRule="evenodd" stroke="#000">
-                                    <path d="M0 7h41.864M35.428 1l6 6-6 6"/>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                    <img src={ArchitectureImage} alt="Architecture"/>
-                </motion.a>
+                            <div className="story-details">
+                                <h3 className="story-details__place">{story.title}</h3>
+                                <p className="story-details__name">{story.author}</p>
+                                <div className="line"></div>
+                                <div className="invite read-story">
+                                    <button type="button" className="invite-button">Read the Story</button>
+                                    <svg className="invite-button__arrow" xmlns="http://www.w3.org/2000/svg"
+                                         width="43"
+                                         height="14">
+                                        <g fill="none" fillRule="evenodd" stroke="#000">
+                                            <path d="M0 7h41.864M35.428 1l6 6-6 6"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <motion.img
+                                        srcSet={`
+                                            ${story.imageSmall} 375w,
+                                            ${story.image} 
+                                        `}
+                                        sizes="
+                                            (max-width: 500px) 100vw,
+                                            (min-width: 501px) and (max-width: 1200px) 100vw,
+                                            (min-width: 1201px) 100vw
+                                        "
+                                        className="stories-image"
+                                        alt={story.alt}
+                            />
+                        </Link>
+                    </motion.div>
+                ))}
             </motion.section>
             <motion.section
                 id="section-5"
@@ -430,7 +375,6 @@ export default function Home() {
                     </p>
                 </div>
             </motion.section>
-
             <Footer/>
         </main>
     )

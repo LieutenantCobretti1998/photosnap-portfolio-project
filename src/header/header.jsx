@@ -1,11 +1,19 @@
 import "./header.css"
 import {Link, useLocation} from "react-router-dom";
+import {useState} from "react";
+
 export default function Header() {
     let location = useLocation();
+    const [menuOpen, setMenuOpen] = useState(false);
     const isHome = location.pathname === "/";
     const isStories = location.pathname === "/stories";
     const isFeatures = location.pathname === "/features";
     const isPricing = location.pathname === "/pricing";
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+        document.body.classList.toggle("menu-open", !menuOpen); // Toggle scrolling
+    }
     return (
         <>
             <header className="navigation">
@@ -42,32 +50,42 @@ export default function Header() {
                         </g>
                     </svg>
                 )}
-                <menu className="navigation__activities">
-                    <div className="navigation__activities__stories">
-                        {!isStories ? (
-                            <Link to="/stories">Stories</Link>
-                        ): (
-                            <Link className="active-page" to="/stories">Stories</Link>
-                            )}
-                    </div>
-                    <div className="navigation__activities__stories">
-                        {!isFeatures ? (
-                            <Link to="/features">Features</Link>
-                        ): (
-                            <Link className="active-page" to="/features">Features</Link>
-                        )}
-                    </div>
-                    <div className="navigation__activities__stories">
-                        {!isPricing ? (
-                            <Link to="/pricing">Pricing</Link>
-                        ): (
-                            <Link className="active-page" to="/pricing">Pricing</Link>
-                        )}
-                    </div>
-                </menu>
-                <button className="navigation__get-invite" type="button">
-                    Get an Invite
+                <button
+                    className="hamburger"
+                    onClick={toggleMenu}>
+                    <span className={`hamburger-line ${menuOpen ? "active-1": ""}`}></span>
+                    <span className={`hamburger-line ${menuOpen ? "hide": ""}`}></span>
+                    <span className={`hamburger-line ${menuOpen ? "active-2": ""}`}></span>
                 </button>
+                <div className={`overlay ${menuOpen ? "open" : ""}`}>
+
+                    <menu className={`navigation__activities ${menuOpen ? "menu-open" : ""}`}>
+                        <div className="navigation__activities__stories">
+                            {!isStories ? (
+                                <Link to="/stories">Stories</Link>
+                            ): (
+                                <Link className="active-page" to="/stories">Stories</Link>
+                                )}
+                        </div>
+                        <div className="navigation__activities__stories">
+                            {!isFeatures ? (
+                                <Link to="/features">Features</Link>
+                            ): (
+                                <Link className="active-page" to="/features">Features</Link>
+                            )}
+                        </div>
+                        <div className="navigation__activities__stories">
+                            {!isPricing ? (
+                                <Link to="/pricing">Pricing</Link>
+                            ): (
+                                <Link className="active-page" to="/pricing">Pricing</Link>
+                            )}
+                        </div>
+                        <button className="navigation__get-invite" type="button">
+                            Get an Invite
+                        </button>
+                    </menu>
+                </div>
             </header>
         </>
     )

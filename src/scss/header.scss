@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10rem 0 10rem;
+  padding: 0 2rem 0 2rem;
   background-color: white;
 
   &__content {
@@ -15,6 +15,8 @@
   &__activities {
     display: flex;
     gap: 4rem;
+    align-items: center;
+    justify-content: center;
 
     &__stories {
       font-size: 1.2rem;
@@ -79,11 +81,6 @@
     display: flex;
   }
 
-
-  .navigation__get-invite {
-    display: none;
-  }
-
   .navigation {
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   }
@@ -109,6 +106,19 @@
   }
 
   .navigation {
+    position: relative;
+
+    &__get-invite {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 130px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: var(--light-grey);
+      }
+    }
 
     & svg {
       position: relative;
@@ -126,6 +136,10 @@
       transform: translateY(-100%);
       opacity: 0;
       transition: transform 0.3s ease, opacity 0.3s ease;
+
+      &__get-invite {
+        display: inline-flex;
+      }
     }
   }
 
@@ -156,5 +170,11 @@
     pointer-events: auto;
     opacity: 1;
     top: -1px;
+  }
+}
+
+@media(min-width: 1280px) {
+  .navigation {
+    padding: 0 30rem 0 40rem;
   }
 }

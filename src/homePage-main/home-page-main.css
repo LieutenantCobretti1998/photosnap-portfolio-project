@@ -219,16 +219,16 @@
   height: auto;
 }
 
-@media (min-width: 330px) and (max-width: 500px) {
+@media (min-width: 330px) and (max-width: 600px) {
   #section-1,
-  #section-3,
-  #section-5 {
+  #section-3 {
     flex-direction: column-reverse;
   }
   #section-2 {
     flex-direction: column;
   }
   #section-5 {
+    flex-direction: column;
     padding: 4rem;
   }
   .image-box {
@@ -257,6 +257,32 @@
   .no-photo > p {
     text-align: center;
     font-size: 2rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1280px) {
+  .stories {
+    max-width: 85%;
+  }
+  .stories span {
+    font-size: 2rem;
+  }
+  #works {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  #section-5 {
+    flex-direction: column;
+  }
+  .responsive > h3,
+  .available > h3,
+  .no-photo > h3 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  .responsive > p,
+  .available > p,
+  .no-photo > p {
+    text-align: center;
+    font-size: 2.5rem;
   }
 }
 

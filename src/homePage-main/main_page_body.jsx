@@ -20,12 +20,10 @@ const imageVariants = {
     hidden: {
         opacity: 0,
         pointerEvents: "none",
-        y: 50
     },
     visible: (index) => ({
         opacity: 1,
         pointerEvents: "auto",
-        y: 0,
         transition: {
             duration: 0.5,
             delay: 0.1 * index,
@@ -74,12 +72,15 @@ export default function Home() {
     const controls = useAnimation();
     const section2Controls = useAnimation();
     const section3Controls = useAnimation();
+    const section5Controls = useAnimation();
     const section2Container = useRef(null);
     const section3Container = useRef(null);
+    const section5Container = useRef(null);
     const storiesContainer = useRef(null);
-    const isInView = useInView(storiesContainer, {once:true, amount:"some"});
-    const isSection2 = useInView(section2Container, {once:true, amount:"some"});
-    const isSection3 = useInView(section3Container, {once:true, amount:"some"});
+    const isInView = useInView(storiesContainer, {once:true, amount:0.01});
+    const isSection2 = useInView(section2Container, {once:true, amount:0.1});
+    const isSection3 = useInView(section3Container, {once:true, amount:0.1});
+    const iseSection5 = useInView(section5Container, {once:true, amount:0.1});
 
     useEffect(() => {
         setStoriesData(stories.slice(0, 4));
@@ -102,6 +103,12 @@ export default function Home() {
             section3Controls.start("visible");
         }
     }, [section3Controls, isSection3]);
+
+    useEffect(() => {
+        if(iseSection5) {
+            section5Controls.start("visible");
+        }
+    }, [section5Controls, iseSection5]);
 
     return (
         <main>
@@ -251,9 +258,8 @@ export default function Home() {
                                             ${story.image} 
                                         `}
                                         sizes="
-                                            (max-width: 500px) 100vw,
-                                            (min-width: 501px) and (max-width: 1200px) 100vw,
-                                            (min-width: 1201px) 100vw
+                                            (max-width: 600px) 100vw,
+                                            (max-width: 1200px) 100vw,
                                         "
                                         className="stories-image"
                                         alt={story.alt}
@@ -264,9 +270,9 @@ export default function Home() {
             </motion.section>
             <motion.section
                 id="section-5"
-                ref={storiesContainer}
+                ref={section5Container}
                 initial={{opacity: 0, y: 50}}
-                animate={isInView ? {opacity: 1, y: 0} : {}}
+                animate={iseSection5 ? {opacity: 1, y: 0} : {}}
                 transition={{duration: 0.6, ease: "easeIn"}}
             >
                 <motion.div className="responsive">

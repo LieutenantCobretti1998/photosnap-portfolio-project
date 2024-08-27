@@ -78,7 +78,7 @@
   }
 }
 
-@media(min-width: 330px) and (max-width: 500px) {
+@media(min-width: 330px) and (max-width: 600px) {
   #footer {
     flex-direction: column;
     padding: 5rem;
@@ -106,5 +106,40 @@
 
   .invite {
     align-self: center !important;
+  }
+}
+
+@media(min-width: 600px) and (max-width: 1280px) {
+  #footer {
+    flex-direction: column;
+    padding: 5rem;
+    gap: 4rem;
+  }
+
+  .logos {
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .pages {
+
+    & div {
+      & a {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .get-invite {
+    margin-top: 7rem;
+    gap: 3rem;
+  }
+
+  .invite {
+    align-self: center !important;
+  }
+
+  .invite-button {
+    font-size: 2rem;
   }
 }

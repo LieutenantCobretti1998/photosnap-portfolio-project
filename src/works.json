@@ -49,6 +49,7 @@
   {
     "id": 5,
     "image": "/src/assets/stories/desktop/world-tour.jpg",
+    "imageSmall": "/src/assets/stories/mobile/world-tour.jpg",
     "background_img": "/src/assets/stories/background/world-tour.jpg",
     "alt": "World Tour 2019",
     "date": "April 7th 2020",
@@ -59,6 +60,7 @@
   {
     "id": 6,
     "image": "/src/assets/stories/desktop/unforeseen-corners.jpg",
+    "imageSmall": "/src/assets/stories/mobile/unforeseen-corners.jpg",
     "background_img": "/src/assets/stories/background/tree.jpg",
     "alt": "Unforeseen Corners",
     "date": "April 3rd 2020",
@@ -69,6 +71,7 @@
   {
     "id": 7,
     "image": "/src/assets/stories/desktop/king-on-africa.jpg",
+    "imageSmall": "/src/assets/stories/mobile/ing-on-africa.jpg",
     "background_img": "/src/assets/stories/background/wp6996296-lion-4k-wallpapers.jpg",
     "alt": "King on Africa: Part II",
     "date": "March 29th 2020",
@@ -79,6 +82,7 @@
   {
     "id": 8,
     "image": "/src/assets/stories/desktop/trip-to-nowhere.jpg",
+    "imageSmall": "/src/assets/stories/mobile/trip-to-nowhere.jpg",
     "background_img": "/src/assets/stories/background/tree-wallpaper-1920x1080.jpg",
     "alt": "The Trip to Nowhere",
     "date": "March 21st 2020",
@@ -89,6 +93,7 @@
   {
     "id": 9,
     "image": "/src/assets/stories/desktop/rage-of-the-sea.jpg",
+    "imageSmall": "/src/assets/stories/mobile/rage-of-the-sea.jpg",
     "background_img": "/src/assets/stories/background/32-322852_biggest-maldives-waves.jpg",
     "alt": "Rage of The Sea",
     "date": "March 19th 2020",
@@ -99,6 +104,7 @@
   {
     "id": 10,
     "image": "/src/assets/stories/desktop/behind-the-waves.jpg",
+    "imageSmall": "/src/assets/stories/mobile/behind-the-waves.jpg",
     "background_img": "/src/assets/stories/background/waves.jpg",
     "alt": "Behind the Waves",
     "date": "March 11th 2020",
@@ -109,6 +115,7 @@
   {
     "id": 11,
     "image": "/src/assets/stories/desktop/calm-waters.jpg",
+    "imageSmall": "/src/assets/stories/mobile/calm-waters.jpg",
     "background_img": "/src/assets/stories/background/calm-waters.jpg",
     "alt": "Calm Waters",
     "date": "March 9th 2020",
@@ -119,6 +126,7 @@
   {
     "id": 12,
     "image": "/src/assets/stories/desktop/milky-way.jpg",
+    "imageSmall": "/src/assets/stories/mobile/milky-way.jpg",
     "background_img": "/src/assets/stories/background/milky-way.jpeg",
     "alt": "The Milky Way",
     "date": "March 5th 2020",
@@ -129,6 +137,7 @@
   {
     "id": 13,
     "image": "/src/assets/stories/desktop/dark-forest.jpg",
+    "imageSmall": "/src/assets/stories/mobile/dark-forest.jpg",
     "background_img": "/src/assets/stories/background/dark-forest.jpg",
     "alt": "Night at The Dark Forest",
     "date": "March 4th 2020",
@@ -139,6 +148,7 @@
   {
     "id": 14,
     "image": "/src/assets/stories/desktop/somwarpet.jpg",
+    "imageSmall": "/src/assets/stories/mobile/somwarpet.jpg",
     "background_img": "/src/assets/stories/background/marigolds.jpeg",
     "alt": "Somwarpet’s Beauty",
     "date": "March 1st 2020",
@@ -149,6 +159,7 @@
   {
     "id": 15,
     "image": "/src/assets/stories/desktop/land-of-dreams.jpg",
+    "imageSmall": "/src/assets/stories/mobile/land-of-dreams.jpg",
     "background_img": "/src/assets/stories/background/dreamland.jpg",
     "alt": "Land of Dreams",
     "date": "February 25th 2020",
@@ -159,6 +170,7 @@
   {
     "id": 16,
     "image": "/src/assets/stories/desktop/running-free.jpg",
+    "imageSmall": "/src/assets/stories/mobile/running-free.jpg",
     "background_img": "/src/assets/stories/background/horser.jpg",
     "alt": "Running Free",
     "date": "March 16th 2020",

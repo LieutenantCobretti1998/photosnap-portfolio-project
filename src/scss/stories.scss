@@ -84,3 +84,34 @@
   }
 }
 
+@media(min-width: 330px) and (max-width: 600px) {
+
+  .big-image {
+    flex-direction: column;
+  }
+
+  .overview {
+    margin-left: 0;
+    &__name {
+      font-size: 2.5rem;
+    }
+
+    &__time {
+      font-size: 1.5rem;
+    }
+
+    &__story {
+      font-size: 1.3rem;
+      width: 100%;
+    }
+  }
+  .invite {
+    width: 100%;
+  }
+}
+
+@media(min-width: 540px) and (max-width: 600px) {
+  .big-image {
+    margin-bottom: 3rem;
+  }
+}

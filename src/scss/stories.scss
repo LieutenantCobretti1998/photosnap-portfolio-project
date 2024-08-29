@@ -117,32 +117,42 @@
 
 
 @media(min-width: 600px) and (max-width: 1280px) {
+
+  .main-stories-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .big-image {
     background-image: url("../assets/stories/tablet/moon-of-appalacia.jpg");
+    height: 100%;
   }
 
   .overview {
+    margin-top: 1.5rem;
 
     &__featured {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
 
     &__name {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
 
     &__time {
       font-size: 2rem;
+
     }
 
     &__story {
-      width: 60%;
-      font-size: 2rem;
-      line-height: 3rem;
+      width: 70%;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
     }
   }
   .little-wd {
-    width: 200px;
+    width: 250px;
+    margin-bottom: 5rem;
   }
 }
 

@@ -216,4 +216,56 @@
   color: var(--black);
 }
 
+@media (min-width: 330px) and (max-width: 600px) {
+  .prices {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .pricing-plan {
+    width: 85vw;
+  }
+  .pricing-table {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1280px) {
+  .prices {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .pricing-plan {
+    width: 85vw;
+  }
+  .pricing-plan div:nth-child(1) {
+    justify-content: space-between;
+    display: flex;
+  }
+  .pricing-plan div:nth-child(1) div:nth-child(1) {
+    width: 50%;
+  }
+  .price-pr-mnth {
+    flex-grow: 1;
+    align-items: end;
+    padding: 5rem;
+  }
+  .choose-btn {
+    width: 20%;
+    margin-left: 5rem;
+    align-self: start;
+  }
+  .pricing-table {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .title-descr h2 {
+    align-self: start;
+    margin-left: 3rem;
+  }
+  .title-descr p {
+    text-align: start;
+    margin-left: 3rem;
+  }
+}
+
 /*# sourceMappingURL=pricing.css.map */

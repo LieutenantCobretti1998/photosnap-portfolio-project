@@ -1,8 +1,11 @@
 import "./features.css";
-import ManWithCamera from "../assets/features/desktop/hero.jpg";
 import Footer from "../footer/footer.jsx";
 import {motion, useAnimation, useInView} from "framer-motion";
 import {useEffect, useRef} from "react";
+import ManWithCameraSmall from "../assets/features/mobile/hero.jpg";
+import ManWithCameraMedium from "../assets/features/tablet/hero.jpg";
+import ManWithCamera from "../assets/features/desktop/hero.jpg";
+import ResponsiveImage from "../helpers/responsiveImage.jsx";
 const svgVariants = {
     hidden: {opacity: 0, pathLength: 0, stroke: "#000" },
     visible: {
@@ -18,7 +21,7 @@ const svgVariants = {
 export default function Features() {
     const controls = useAnimation();
     const featuresRef = useRef(null);
-    const isInView = useInView(featuresRef, {once:true, amount:0.5})
+    const isInView = useInView(featuresRef, {once:true, amount:0.1})
     useEffect(() => {
         if(isInView) {
             controls.start("visible");
@@ -41,9 +44,11 @@ export default function Features() {
                     </div>
                 </div>
 
-                <div className="image-box">
-                    <img src={ManWithCamera} alt="man with a camera"/>
-                </div>
+                <ResponsiveImage alt="Man looking on the lake"
+                                 smallSrc={ManWithCameraSmall}
+                                 mediumSrc={ManWithCameraMedium}
+                                 defaultSrc={ManWithCamera}
+                />
             </motion.section>
             <motion.section id="features"
                             ref={featuresRef}

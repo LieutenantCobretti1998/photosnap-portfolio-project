@@ -1,10 +1,13 @@
-import WomanShooting from "../assets/pricing/desktop/hero.jpg";
 import "./pricing.css";
 import pricing from "../pricing.json";
 import {useRef, useState} from "react";
 import PricingPlan from "./pricing-plan.jsx";
 import Footer from "../footer/footer.jsx";
 import {useInView, motion} from "framer-motion";
+import WomanShootingSmall from "../assets/pricing/mobile/hero.jpg";
+import WomanShootingMedium from "../assets/pricing/tablet/hero.jpg";
+import WomanShooting from "../assets/pricing/desktop/hero.jpg";
+import ResponsiveImage from "../helpers/responsiveImage.jsx";
 
 export default function Pricing() {
     const [plans, setPlans] = useState(pricing);
@@ -32,9 +35,11 @@ export default function Pricing() {
                     </div>
                 </div>
 
-                <div className="image-box">
-                    <img src={WomanShooting} alt="woman is shooting"/>
-                </div>
+                <ResponsiveImage alt="Man looking on the lake"
+                                 smallSrc={WomanShootingSmall}
+                                 mediumSrc={WomanShootingMedium}
+                                 defaultSrc={WomanShooting}
+                />
             </motion.section>
 
             <section  className="price-list">

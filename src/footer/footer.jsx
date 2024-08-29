@@ -109,7 +109,7 @@ function Footer() {
             </div>
 
             <div className="get-invite">
-                <div className="invite">
+                <div className="invite-footer">
                     <button type="button" className="invite-button">Get an Invite</button>
                     <svg className="invite-button__arrow" xmlns="http://www.w3.org/2000/svg"
                          width="43"

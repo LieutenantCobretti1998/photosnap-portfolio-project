@@ -7,6 +7,12 @@
   //gap: 30rem;
 }
 
+.invite-footer {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
 .logos {
   display: flex;
   flex-direction: column;
@@ -104,7 +110,7 @@
     gap: 3rem;
   }
 
-  .invite {
+  .invite-footer {
     align-self: center !important;
   }
 }
@@ -135,7 +141,7 @@
     gap: 3rem;
   }
 
-  .invite {
+  .invite-footer {
     align-self: center !important;
   }
 

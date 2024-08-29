@@ -82,7 +82,7 @@ export default function Stories() {
     }
 
     return (
-        <main>
+        <main className="main-stories-container">
             {
                 window.innerWidth > breakPoints.mobile.min && window.innerWidth < breakPoints.mobile.max ? (
                     <motion.section
@@ -143,7 +143,7 @@ export default function Stories() {
                                 is popularly called "mountains", especially in eastern Kentucky and West Virginia,
                                 and while the ridges are not high, the terrain is extremely rugged.
                             </span>
-                            <div className="invite read-story-1">
+                            <div className="invite read-story-1 little-wd">
                                 <button type="button" className="invite-button">Read the Story</button>
                                 <svg className="invite-button__arrow" xmlns="http://www.w3.org/2000/svg"
                                      width="43"

@@ -37,7 +37,7 @@
 }
 
 .read-story-1 {
-  width: 10%;
+  width: 150px;
   margin-top: 1.5rem;
   justify-content: space-between;
 }
@@ -76,6 +76,10 @@
 }
 
 @media (min-width: 330px) and (max-width: 600px) {
+  .main-stories-container {
+    display: flex;
+    flex-direction: column;
+  }
   .big-image {
     flex-direction: column;
   }
@@ -96,9 +100,31 @@
     width: 100%;
   }
 }
-@media (min-width: 540px) and (max-width: 600px) {
+@media (min-width: 600px) and (max-width: 1280px) {
   .big-image {
-    margin-bottom: 3rem;
+    background-image: url("../assets/stories/tablet/moon-of-appalacia.jpg");
+  }
+  .overview__featured {
+    font-size: 3rem;
+  }
+  .overview__name {
+    font-size: 4rem;
+  }
+  .overview__time {
+    font-size: 2rem;
+  }
+  .overview__story {
+    width: 60%;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .little-wd {
+    width: 200px;
+  }
+}
+@media (min-width: 2560px) {
+  .read-story-1 {
+    width: 175px;
   }
 }
 

@@ -1,7 +1,7 @@
 import "./features.css";
 import Footer from "../footer/footer.jsx";
 import {motion, useAnimation, useInView} from "framer-motion";
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import ManWithCameraSmall from "../assets/features/mobile/hero.jpg";
 import ManWithCameraMedium from "../assets/features/tablet/hero.jpg";
 import ManWithCamera from "../assets/features/desktop/hero.jpg";
@@ -20,6 +20,7 @@ const svgVariants = {
 
 export default function Features() {
     const controls = useAnimation();
+    const [imagesLoaded, setImagesLoaded] = useState(false);
     const featuresRef = useRef(null);
     const isInView = useInView(featuresRef, {once:true, amount:0.1})
     useEffect(() => {
@@ -27,6 +28,9 @@ export default function Features() {
             controls.start("visible");
         }
     }, [controls, isInView]);
+    const handleImageLoad = () => {
+        setImagesLoaded(true);
+    };
     return (
         <main>
             <motion.section id="section-1"
@@ -44,10 +48,11 @@ export default function Features() {
                     </div>
                 </div>
 
-                <ResponsiveImage alt="Man looking on the lake"
+                <ResponsiveImage alt="Man with a camera"
                                  smallSrc={ManWithCameraSmall}
                                  mediumSrc={ManWithCameraMedium}
                                  defaultSrc={ManWithCamera}
+                                 onLoad={handleImageLoad}
                 />
             </motion.section>
             <motion.section id="features"

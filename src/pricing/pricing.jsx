@@ -1,6 +1,6 @@
 import "./pricing.css";
 import pricing from "../json_files_dev/pricing.json";
-import {useEffect, useRef, useState} from "react";
+import {useRef, useState} from "react";
 import PricingPlan from "./pricing-plan.jsx";
 import Footer from "../footer/footer.jsx";
 import {useInView, motion} from "framer-motion";
@@ -11,7 +11,6 @@ import ResponsiveImage from "../helpers/responsiveImage.jsx";
 
 export default function Pricing() {
     const [plans, setPlans] = useState(pricing);
-    const [imagesLoaded, setImagesLoaded] = useState(false);
     const tableRef = useRef(null);
     const isInView = useInView(tableRef, {once:true, amount:"some"})
     const [yearly, setYearly] = useState(false);

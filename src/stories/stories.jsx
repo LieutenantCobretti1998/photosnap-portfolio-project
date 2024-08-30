@@ -127,7 +127,7 @@ export default function Stories() {
                                 <p className="overview__time">March 2nd 2020 by John Appleseed</p>
                                 <span className="overview__story">
                                     The dissected plateau area, while not actually made up of geological mountains,
-                                    is popularly called "mountains", especially in eastern Kentucky and West Virginia,
+                                    is popularly called mountains, especially in eastern Kentucky and West Virginia,
                                     and while the ridges are not high, the terrain is extremely rugged.
                                 </span>
                                 <div className="invite read-story-1">

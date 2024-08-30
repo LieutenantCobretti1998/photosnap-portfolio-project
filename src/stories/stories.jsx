@@ -87,7 +87,7 @@ export default function Stories() {
                     console.error(error)
                 }
             } else {
-                console.log("story_id is undefined or null");
+                return;
             }
         }
 

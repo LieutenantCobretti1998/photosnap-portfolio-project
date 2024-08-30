@@ -6,7 +6,6 @@ import {useEffect} from "react";
 function Story() {
     const story = useOutletContext();
     const location = useLocation(); // Hook to get the current location
-    console.log(location);
     const sentences = story.story.match(/[^.!?]+[.!?]+/g);
     const paragraphs = [];
     for (let i = 0; i < sentences.length; i += 5) {

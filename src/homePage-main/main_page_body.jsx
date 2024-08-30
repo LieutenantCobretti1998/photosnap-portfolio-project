@@ -77,10 +77,10 @@ export default function Home() {
     const section3Container = useRef(null);
     const section5Container = useRef(null);
     const storiesContainer = useRef(null);
-    const isInView = useInView(storiesContainer, {once:true, amount:"all"});
-    const isSection2 = useInView(section2Container, {once:true, amount:"all"});
-    const isSection3 = useInView(section3Container, {once:true, amount:"all"});
-    const iseSection5 = useInView(section5Container, {once:true, amount:"all"});
+    const isInView = useInView(storiesContainer, {once:true, amount:"some"});
+    const isSection2 = useInView(section2Container, {once:true, amount:"some"});
+    const isSection3 = useInView(section3Container, {once:true, amount:"some"});
+    const iseSection5 = useInView(section5Container, {once:true, amount:"some"});
 
     useEffect(() => {
         setStoriesData(stories.slice(0, 4));

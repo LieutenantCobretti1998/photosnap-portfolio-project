@@ -12,7 +12,7 @@ import ResponsiveImage from "../helpers/responsiveImage.jsx";
 export default function Pricing() {
     const [plans, setPlans] = useState(pricing);
     const tableRef = useRef(null);
-    const isInView = useInView(tableRef, {once:true, amount:"some"})
+    const isInView = useInView(tableRef, {once:true, amount:"all"})
     const [yearly, setYearly] = useState(false);
     const handleChange = () => {
         setYearly(!yearly);

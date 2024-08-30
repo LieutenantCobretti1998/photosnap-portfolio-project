@@ -2,9 +2,11 @@ import {useLocation, useOutletContext} from "react-router-dom";
 import "./story.css"
 import Footer from "../footer/footer.jsx";
 import {useEffect} from "react";
+
 function Story() {
     const story = useOutletContext();
-    const location = useLocation();  // Hook to get the current location
+    const location = useLocation(); // Hook to get the current location
+    console.log(location);
     const sentences = story.story.match(/[^.!?]+[.!?]+/g);
     const paragraphs = [];
     for (let i = 0; i < sentences.length; i += 5) {
@@ -12,22 +14,23 @@ function Story() {
     }
 
     useEffect(() => {
-        // Set up the background image when the component mounts
-        const imageContainer = document.querySelector('.background-image .image-container');
+        const imageContainer = document.querySelector('.image-container img');
 
-        // Cleanup the background image when the component unmounts
+        // Force image reload by appending a timestamp to the URL
+        // Set the image source
+        imageContainer.src = `${story.background_img}?t=${new Date().getTime()}`;
+
+        // Cleanup the image source when the component unmounts or when the route changes
         return () => {
-            imageContainer.style.backgroundImage = '';
+            imageContainer.src = '';  // Correctly clear the image src attribute
         };
-    }, [location]); // Re-run this effect if the background image changes
+    }, [location, story.background_img]);  // Re-run this effect when the location or background image changes
 
     return (
         <main>
             <section className="background-image">
                 <div className="image-container">
-                    <img src={story.background_img}
-                         alt={story.alt}
-                    />
+                    <img alt={story.alt}/>
                 </div>
                 <div className="story-container">
                     <h2>

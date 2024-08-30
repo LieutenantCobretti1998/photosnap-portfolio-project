@@ -1,5 +1,5 @@
 "use strict";
-import works from "./json_files_dev/works.json"
+import works from "./works.json";
 /**
  * Fetch data for the all stories in the website
  * @param {Number} story_id

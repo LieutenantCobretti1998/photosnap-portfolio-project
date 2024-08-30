@@ -1,5 +1,5 @@
 import "./pricing.css";
-import pricing from "../pricing.json";
+import pricing from "../json_files_dev/pricing.json";
 import {useRef, useState} from "react";
 import PricingPlan from "./pricing-plan.jsx";
 import Footer from "../footer/footer.jsx";

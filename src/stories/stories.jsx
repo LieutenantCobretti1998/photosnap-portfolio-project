@@ -1,6 +1,6 @@
 import "./stories.css";
 import stories from "../works.json";
-import {useEffect, useRef, useState} from "react";
+import {useCallback, useEffect, useRef, useState} from "react";
 import {motion, useAnimation, useInView} from "framer-motion";
 import Footer from "../footer/footer.jsx";
 import {Link, Outlet, useParams} from "react-router-dom";
@@ -40,6 +40,8 @@ const breakPoints = {
 
 export default function Stories() {
     const [storiesData, setStoriesData] = useState([]);
+    const [windowSize, setWindowSize] = useState(window.innerWidth);
+    const [previousWindowSize, setPreviousWindowSize] = useState(window.innerWidth);
     const controls = useAnimation();
     const storiesContainer = useRef(null);
     const isInView = useInView(storiesContainer, {once:true, amount:"some"});
@@ -49,6 +51,24 @@ export default function Stories() {
     useEffect(() => {
         setStoriesData(stories);
     }, []);
+
+    const handleWindowSizeChange = useCallback(() => {
+        const newWindowSize = window.innerWidth;
+        setWindowSize(window.innerWidth);
+        const hasCrossed600 = (previousWindowSize < 600 && newWindowSize >= 600) || (previousWindowSize >= 600 && newWindowSize < 600);
+        const hasCrossed330 = (previousWindowSize < 330 && newWindowSize >= 330) || (previousWindowSize >= 330 && newWindowSize < 330);
+        if (hasCrossed600 || hasCrossed330) {
+            setWindowSize(newWindowSize);
+            setPreviousWindowSize(newWindowSize);
+        }
+    }, [previousWindowSize]);
+
+    useEffect(() => {
+        window.addEventListener("resize", handleWindowSizeChange);
+        return () => {
+            window.removeEventListener("resize", handleWindowSizeChange);
+        }
+    }, [handleWindowSizeChange]);
 
     useEffect(() => {
         if (isInView) {

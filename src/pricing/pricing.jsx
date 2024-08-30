@@ -19,12 +19,6 @@ export default function Pricing() {
         setYearly(!yearly);
     };
 
-    useEffect(() => {
-        const images = [
-            WomanShootingSmall,
-            WomanShootingMedium,
-            WomanShooting,
-        ];
     return (
         <main className="main-container">
             <motion.section

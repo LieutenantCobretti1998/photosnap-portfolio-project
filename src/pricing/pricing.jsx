@@ -25,21 +25,6 @@ export default function Pricing() {
             WomanShootingMedium,
             WomanShooting,
         ];
-
-        const loadImage = (src) => {
-            return new Promise((resolve, reject) => {
-                const img = new Image();
-                img.src = src;
-                img.onload = resolve;
-                img.onerror = reject;
-            });
-        };
-
-        Promise.all(images.map(loadImage))
-            .then(() => setImagesLoaded(true))
-            .catch((err) => console.error("Failed to load images", err));
-    }, []);
-
     return (
         <main className="main-container">
             <motion.section

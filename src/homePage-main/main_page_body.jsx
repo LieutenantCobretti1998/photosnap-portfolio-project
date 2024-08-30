@@ -69,7 +69,6 @@ const svgVariants = {
 
 export default function Home() {
     const [storiesData, setStoriesData] = useState([]);
-    const [imagesLoaded, setImagesLoaded] = useState(false);
     const controls = useAnimation();
     const section2Controls = useAnimation();
     const section3Controls = useAnimation();
@@ -110,34 +109,6 @@ export default function Home() {
             section5Controls.start("visible");
         }
     }, [section5Controls, iseSection5]);
-
-    useEffect(() => {
-        const images = [
-            BeautifulStoriesImage,
-            BeautifulStoriesImageSmall,
-            BeautifulStoriesImageMedium,
-            CreateAndShareImage,
-            CreateShareImageSmall,
-            CreateShareImageMedium,
-            DesignedForEveryoneImage,
-            DesignedForEveryoneImageSmall,
-            DesignedForEveryoneImageMedium,
-            ...stories.map((story) => [story.image, story.imageSmall]).flat(),
-        ];
-
-        const loadImage = (src) => {
-            return new Promise((resolve, reject) => {
-                const img = new Image();
-                img.src = src;
-                img.onload = resolve;
-                img.onerror = reject;
-            });
-        };
-
-        Promise.all(images.map(loadImage))
-            .then(() => setImagesLoaded(true))
-            .catch((err) => console.error("Failed to load images", err));
-    }, []);
 
     return (
         <main>

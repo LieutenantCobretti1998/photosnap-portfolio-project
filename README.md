@@ -1,6 +1,8 @@
 # Photosnap Website
 
 ![Design preview for the Photosnap Website coding challenge](preview.jpg)
+
+
 **Technologies Used**
 1. HTML, CSS, JS
 2. React
